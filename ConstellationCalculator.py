@@ -109,7 +109,6 @@ transfer_period = target_period * ((num_sats - 1) / num_sats)
 transfer_sma = ((G * mass * transfer_period**2) / (4 * math.pi**2))**(1.0 / 3.0)
 transfer_peri = transfer_sma * 2 - target_alt - radius * 2
 print(f'Target Altitude:\t{round(target_alt)} m')
-print(f'Transfer Apoapsis:\t{round(target_alt)} m')
 print(f'Transfer Periapsis:\t{round(transfer_peri)} m')
 
 # recalculating
@@ -119,5 +118,4 @@ if transfer_peri <= min_alt:
     transfer_sma = ((G * mass * transfer_period**2) / (4 * math.pi**2))**(1.0 / 3.0)
     transfer_alt = transfer_sma * 2 - target_alt - radius * 2
     print(f'Target Altitude:\t{round(target_alt)} m')
-    print(f'Transfer Apoapsis:\t{round(target_alt)} m')
     print(f'Transfer Periapsis:\t{round(transfer_peri)} m')
