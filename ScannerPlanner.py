@@ -25,7 +25,7 @@ print('\nSelected Body:\t{}\nRadius:\t\t{} m\nScanner FOV:\t{} rad\nBuffer:\t\t{
 
 # caculating
 print('Calculating...')
-x = (r+buf) / sin(fov)
+x = (r+buf) / sin(fov/2)
 alt = round(x - r)
 
 # results
